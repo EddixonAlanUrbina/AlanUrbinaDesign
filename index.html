@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Alan Urbina Design</title>
-
+    <!-- LINK BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <!-- LINK GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -25,37 +25,52 @@
         <header>
             <nav class="header-container">
                 <ul class="header-items">
-                    <li class="items-menu"><a href="#SobreMi">SOBRE MI</a></li>
+                    <li class="items-menu"><a href="#sobremi">SOBRE MI</a></li>
                     <li class="items-menu"><a href="#servicio">SERVICIOS</a></li>
-                    <li class="items-menu"><a href="#"><img class="Logo-Alan-01" src="media/logo.home.svg" alt="Logo Alan Urbina"></li></a>
+                    <li class="items-menu"><a href="#"><img class="Logo-Alan-01" src="media/logo.home.svg" alt="Logo Alan Urbina"></a></li>
                     <li class="items-menu"><a href="#portfolio">PORTFOLIO</a></li>
                     <li class="items-menu"><a href="#contacto">CONTACTO</a></li>
                 </ul>
             </nav>
 
-            <nav class="menu-mobile-container">
-                <ul class="menu-mobile-items">
-                    <li class="logo-mobile"><a href="#"><img src="media/logo-mobile.svg" alt="Logo Alan Urbina Mobile"></a></li>
-                    <li class="icon-menu"><a href=""><img src="media/icono-menu-mobile.svg" alt="Icono Menu Mobile"></a></li>
-                </ul>
+            
+            
+            <nav class="navmobile-content"> 
+                <div class="menu-mobile">
+                    <a href="#"><img src="media/logo-mobile.svg" alt="Logo Alan Urbina Mobile"></a>
+                        <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn"><img src="/media/icono-menu-mobile.svg" class="iconmenu" alt="Icon Menu"></button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="#sobremi">SOBRE MI</a>
+                          <a href="#servicio">SERVICIOS</a>
+                          <a href="#portfolio">PORTFOLIO</a>
+                          <a href="#contacto">CONTACTO</a>
+                        </div>
+                      </div>
+
+                    <!-- <input type="checkbox" id="menumobile">
+                    <label for="menumobile"><img src="/media/icono-menu-mobile.svg" class="iconmenu" alt="Icon Menu"></label> -->
+                </div>
+                 
+                <!-- <div class="itemsnav">
+                    <ul class="nav-mobile">
+                        <li class="itemsmobile-menu"><a href="#sobremi">SOBRE MI</a></li>
+                        <li class="itemsmobile-menu"><a href="#servicio">SERVICIOS</a></li>
+                        <li class="itemsmobile-menu"><a href="#portfolio">PORTFOLIO</a></li>
+                        <li class="itemsmobile-menu"><a href="#contacto">CONTACTO</a></li>
+                    </ul>
+                </div> -->
             </nav>
+
+
+
+              
 
         </header>
     
-    
-    <!-- HEADER PRUEBA 1
-    
-        <header class="header-container">
-        <nav class="header">
-            <div class="sobremi"><a href="#SobreMi">SOBRE MI</a></div>
-            <div class="servicio"><a href="#servicio">SERVICIOS</a></div>
-            <div class="home"><a href="#"><img class="Logo-Alan-01" src="media/logo.home.svg" alt="logo Alan Urbina"></a></div>
-            <div class="portfolio"><a href="#portfolio">PORTFOLIO</a></div>
-            <div class="contacto"><a href="#contacto">CONTACTO</a></div>
-        </nav>
-    </header>
-     -->
-    
+    <!-- HEADER  -->
+
+
     <main>
         <section class="hero-container">
             
@@ -74,7 +89,7 @@
 
         <!-- SECCION SOBRE MI  -->
     
-        <h2 class="sobremi-title" id="SobreMi">SOBRE MI</h2>
+        <h2 class="sobremi-title" id="sobremi">SOBRE MI</h2>
     
         <section class="sobremi-container">
             <div class="foto-sobremi">
@@ -113,9 +128,9 @@
     
         <section class="servicios-container">
                 <div class="servicios">
-                    <div class="imagenservicios-design"><img src="" alt="diseño grafico"></div>
-                    <div class="imagenservicios-uxui"><img src="" alt="diseño ux ui"></div>
-                    <div class="imagenservicios-web"><img src="" alt="diseño WEB"></div>
+                    <div class="imagenservicios-design"><img src="" alt="Diseño Gráfico"></div>
+                    <div class="imagenservicios-uxui"><img src="" alt="Diseño UX/UI"></div>
+                    <div class="imagenservicios-web"><img src="" alt="Diseño Web"></div>
                 </div>
         </section>
     
@@ -133,28 +148,30 @@
                      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                        <img src="..." class="d-block w-100" alt="...">
+                        <img src="./media/imagen-carrusel-prueba.png" class="d-block w-100" alt="Logo MonttUrb">
                             </div>
                             <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
+                            <img src="./media/imagen-carrusel-prueba.png" class="d-block w-100" alt="Logo ">
                             </div>
                             <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
+                            <img src="./media/imagen-carrusel-prueba.png" class="d-block w-100" alt="...">
                             </div>
                         </div>
                   </div>
-                    <!-- <ol class="gallery-container">
-                        <li class="item-gallery"><img src="" alt="LOGO-1"></li>
-                        <li class="item-gallery"><img src="" alt="LOGO-2"></li>
-                        <li class="item-gallery"><img src="" alt="LOGO-3"></li>
-                     </ol> -->
     
                 <h3 class="subtitulos-portfolio">SOCIAL MEDIA</h3>
-                    <ol>
-                        <li><img src="" alt="POST-1"></li>
-                        <li><img src="" alt="POST-2"></li>
-                        <li><img src="" alt="POST-3"></li>
-                     </ol>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                    <img src="./media/imagen-carrusel-prueba.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./media/imagen-carrusel-prueba.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="./media/imagen-carrusel-prueba.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
     
                 <h3 class="subtitulos-portfolio">DISEÑO WEB - UX/UI</h3>
                     <ol>
@@ -192,65 +209,31 @@
         <div class="footer-item logo-footer"><img src="media/logo-alan-footer.svg" alt="Logo Alan Urbina">
         </div>   
 
-        <div class="footer-item"><h5>EXPLORAR</h5>
+        <div class="footer-item explorar"><h5>EXPLORAR</h5>
             <ul class="lista-explorar">
                 <li class="text-explorar"><a href="#">INICIO</a></li>
                 <li class="text-explorar"><a href="#SobreMi">SOBRE MI</a></li>
                 <li class="text-explorar"><a href="#servicio">SERVICIOS</a></li>
                 <li class="text-explorar"><a href="#portfolio">PORTFOLIO</a></li>
             </ul></div>
-        <div class="footer-item explorar"><h5>CONTÁCTAME</h5>   
+        <div class="footer-item"><h5>CONTÁCTAME</h5>   
                 <ul class="lista-contactame">
-                    <li class="text-contact"><img src="media/icon-phone.svg" alt="Icon-Phone">      +56 9 1234 1234</li>
+                    <li class="text-contact"><img src="media/icon-phone.svg" alt="Icon-Phone">+56 9 1234 1234</li>
                     <li class="text-contact"><img src="media/icon-mail.svg" alt="Icon-Mail">            info@alanurbinadesign.com</li>
                 </ul>
                 <ul class="socialmedia-container">
                     <li><a href="https://www.linkedin.com/in/eddixon-alan-urbina-montilla/" target="_blank"><img src="media/linkedin.svg" alt=""></a></li>
                     <li><a href="https://www.instagram.com/alanurbinadesign/" target="_blank"><img src="media/instagram.svg" alt=""></a></li>
                 </ul>
-            </div>
-
-
-
-        <!-- <div class="footer-item"><h5>SIGUEME</h5>
-            <ul class="socialmedia-container">
-                <li><a href="https://www.linkedin.com/in/eddixon-alan-urbina-montilla/" target="_blank"><img src="media/linkedin.svg" alt=""></a></li>
-                <li><a href="https://www.instagram.com/alanurbinadesign/" target="_blank"><img src="media/instagram.svg" alt=""></a></li>
-            </ul></div> -->
-
-        
-        <!-- <div>   <img class="logo-alan-footer" src="media/Logo-Alan-Footer.png" alt="logo alan urbina">
-
-            <div class="explorar-container">   
-                <h3>EXPLORAR</h3>
-                <ul class="lista-explorar">
-                    <li class="text-explorar"><a href="#home">INICIO</a></li>
-                    <li class="text-explorar"><a href="#SobreMi">SOBRE MI</a></li>
-                    <li class="text-explorar"><a href="#servicio">SERVICIOS</a></li>
-                    <li class="text-explorar"><a href="#portfolio">PORTFOLIO</a></li>
-                </ul>
-            </div>
-
-            <div class="contactame-container">
-                <h3>CONTÁCTAME</h3>   
-                <ul class="lista-contactame">
-                    <li class="text-contact">+56 9 1234 1234</li>
-                    <li class="text-contact">info@alanurbinadesign.com</li>
-                 </ul>
-            </div>
-
-            <div class="icon-socialmedia">
-                <h3>SIGUEME</h3>
-                <ul class="socialmedia-container">
-                    <li><a href="https://www.linkedin.com/in/eddixon-alan-urbina-montilla/" target="_blank"><img src="media/IconLinkedIn.png" alt=""></a></li>
-                    <li><a href="https://www.instagram.com/alanurbinadesign/" target="_blank"><img src="media/IconInstagram.png" alt=""></a></li>
-                </ul>
-            </div>
-        </div> -->       
+            </div>    
     </footer>
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+    <script>
+        function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");}
+     </script>
 </body>
 </html>
