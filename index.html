@@ -95,7 +95,7 @@
         
         <!-- HABILIDADES -->
         <section>
-            <h4 class="hab-title">HABILIDADES</h4>
+            <h4>HABILIDADES</h4>
                 <div class="habilidades-container">
 
                 <div class="skills-items">
@@ -148,8 +148,7 @@
                         <div><h5>Diseño Gráfico</h5>
                         </div>
                         <div class="text-servicio">
-                            <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus perspiciatis officia aliquid sapiente beatae
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus perspiciatis officia aliquid sapiente beatae
                             </p>
                         </div>
                         
@@ -175,7 +174,7 @@
                     <div class="icon-servicio">
                         <img src="./media/icon-diseno-web.svg" alt="Icono Diseño Web">
                     </div>
-                    <div><h5>Diseño web</h5>
+                    <div><h5>Diseño Web</h5>
                     </div>
                     <div class="text-servicio">
                         <p>
@@ -194,11 +193,11 @@
     
         <!-- SECCION DE PORTFOLIO -->
     
-        <section id="portfolio">
+        <section class="portfolio-container" id="portfolio">
     
-            <h2 class="portfolio-title">PORTFOLIO</h2>
+            <h2>PORTFOLIO</h2>
     
-                <h3 class="sub-portfolio">LOGOS</h3>
+                <!-- <h3 class="sub-portfolio">LOGOS</h3> -->
 
                     <div id="carousel-logos" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
@@ -206,12 +205,21 @@
                             <img src="./media/logo-montturb.webp" class="d-block w-100" alt="Logo MonttUrb">
                         </div>
                         <div class="carousel-item">
-                            <img src="./media/logo-inforov.webp" class="d-block w-100" alt="...">
+                            <img src="./media/logo-inforov.webp" class="d-block w-100" alt="Logo InfoRov">
                         </div>
                         <div class="carousel-item">
-                            <img src="./media/logo-waraira.webp" class="d-block w-100" alt="...">
+                            <img src="./media/logo-waraira.webp" class="d-block w-100" alt="Logo Waraira Food">
                         </div>
+                        <div class="carousel-item">
+                            <img src="./media/socialmedia-1.webp" class="d-block w-100" alt="Redes sociales Valentino">
                         </div>
+                        <div class="carousel-item">
+                            <img src="./media/socialmedia-beer.webp" class="d-block w-100" alt="Redes Sociales Beer">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./media/socialmedia-food.webp" class="d-block w-100" alt="Redes Sociales Food">
+                        </div>
+                    </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carousel-logos" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
@@ -223,55 +231,6 @@
                     </div>
                   </div>
     
-                <h3 class="sub-portfolio">SOCIAL MEDIA</h3>
-
-                    <div id="carousels-socialmedia" class="carousel slide carousel-fade">
-                        <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./media/socialmedia-1.webp" class="d-block w-100" alt="Redes Sociales Valentino">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./media/socialmedia-food.webp" class="d-block w-100" alt="Redes Sociales Food">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./media/socialmedia-beer.webp" class="d-block w-100" alt="Redes Sociales Beer">
-                        </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousels-socialmedia" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousels-socialmedia" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-    
-                <h3 class="sub-portfolio">DISEÑO WEB - UX/UI</h3>
-
-                    <div id="carousel-web" class="carousel slide carousel-fade">
-                        <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./media/web-montturb.webp" class="d-block w-100" alt="Web Montturb">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./media/app-inforov.webp" class="d-block w-100" alt="App InfoRov">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./media/web-waraira.webp" class="d-block w-100" alt="Web Waraira">
-                        </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-web" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-web" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                 <!-- <h3 class="sub-portfolio">VIDEOS</h3> -->
-
     
         </section>
     
@@ -289,23 +248,26 @@
         <div class="footer-item logo-footer"><img src="media/logo-alan-footer.svg" alt="Logo Alan Urbina">
         </div>   
 
-        <div class="footer-item explorar"><h5>EXPLORAR</h5>
+        <div class="footer-item"><h5>EXPLORAR</h5>
             <ul class="lista-explorar">
                 <li class="text-explorar"><a href="#">INICIO</a></li>
                 <li class="text-explorar"><a href="#sobremi">SOBRE MI</a></li>
                 <li class="text-explorar"><a href="#servicio">SERVICIOS</a></li>
                 <li class="text-explorar"><a href="#portfolio">PORTFOLIO</a></li>
-            </ul></div>
+            </ul>
+        </div>
+
         <div class="footer-item"><h5>CONTÁCTAME</h5>   
                 <ul class="lista-contactame">
-                    <li class="text-contact"><img src="media/icon-phone.svg" alt="Icon-Phone">+56 9 1234 1234</li>
-                    <li class="text-contact"><img src="media/icon-mail.svg" alt="Icon-Mail">            info@alanurbinadesign.com</li>
+                    <li class="text-contact"><img src="media/icon-phone.svg" alt="Icon-Phone">   +56 9 3354 3550</li>
+                    <li class="text-contact"><img src="media/icon-mail.svg" alt="Icon-Mail">    info@alanurbinadesign.com</li>
                 </ul>
+
                 <ul class="socialmedia-container">
-                    <li><a href="https://www.linkedin.com/in/eddixon-alan-urbina-montilla/" target="_blank"><img src="media/linkedin.svg" alt=""></a></li>
-                    <li><a href="https://www.instagram.com/alanurbinadesign/" target="_blank"><img src="media/instagram.svg" alt=""></a></li>
+                    <li><a href="https://www.linkedin.com/in/eddixon-alan-urbina-montilla/" target="_blank"><img src="media/linkedin.svg" alt="Logo Linkedin"></a></li>
+                    <li><a href="https://www.instagram.com/alanurbinadesign/" target="_blank"><img src="media/instagram.svg" alt="Logo Instagram"></a></li>
                 </ul>
-            </div>    
+        </div>    
     </footer>
     
 
