@@ -1,0 +1,95 @@
+@media screen and (max-width: 576px){
+    .footer-container{display: none;}
+
+}
+
+@media screen and (max-width: 576px) {
+    .footer-container{
+        margin: 20px 40px;
+        color: #ffffff;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 300px;
+        grid-gap: 10px;
+        justify-content: center;
+        
+        }
+
+    .lista-explorar{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .footer-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lista-contactame{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .text-contact{
+        margin: 4px 0 4px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .socialmedia-container{
+        width: 100%;
+        margin: 10px 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;}
+    }
+
+@media screen and (max-width: 767px){
+    .header-container{display: none;}
+    .header-items{display: none;}
+    
+}
+
+@media screen and (min-width: 768px){
+    .menu-mobile{display: none;
+    }
+    .navmobile-content .menu-mobile {
+        display: none;
+    }
+    .menu-mobile-items{display: none;}
+    .nav-mobile{display: none;}
+
+    .habilidades-container{
+        width: 100%;
+        height: 230px;
+        padding: 1rem 20px;
+        grid-template-rows: repeat(2, 90px);
+        grid-template-columns: repeat(4, 150px);
+        gap: 20px;
+        align-content: center;
+        justify-content: center;
+
+    }
+
+    .servicios-container{
+        width: 100%;
+        margin: 0;
+        padding: 2rem 1rem;
+    
+        display: grid;
+        grid-template-rows: 400px;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 3rem;
+    
+    }
+    
+}

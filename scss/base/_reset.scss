@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    color: $color-text;
+    text-decoration: none;
+}
+
+body{
+    background-color: $color-secundario;
+
+}
+h1{
+    color: $color-text;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 280%;
+    font-weight: bold;
+}
+h2{
+    font-weight: bolder;
+    margin: 0;
+    padding: 30px 0 30px 0;
+    color: $color-text;
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    width: 100%;
+    margin: 2px 0 0 0;
+    color: $color-text;
+    font-family: "Montserrat", sans-serif;
+    border-bottom: #099FCA 2px solid;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+}
+h4{
+    padding: 0 2rem;
+    margin: 0;
+    color: $color-text;
+    font-weight: 50;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+h5{
+    padding: 0;
+    margin: 0;
+    color: $color-text;
+}
+
+.p{
+    color: $color-text;
+}

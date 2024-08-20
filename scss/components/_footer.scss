@@ -1,0 +1,54 @@
+.footer-container{
+    margin: 20px 20px;
+    color: #ffffff;
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: 1fr 0.6fr 1fr;
+    grid-gap: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .footer-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: flex-start;
+
+        .lista-explorar{
+            padding: 0;
+            margin: 0;
+
+            .text-explorar {
+                margin: 4px 0 4px 0;
+            }
+        }
+
+        .lista-contactame{
+            padding: 0;
+            margin: 0;
+
+            .text-contact{
+                margin: 4px 0 4px 0;
+            
+            }
+        }
+    }
+
+    .logo-footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .socialmedia-container{
+        width: 50%;
+        margin: 10px 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        justify-content: flex-start;
+        gap: 5px;
+    
+    }
+}
