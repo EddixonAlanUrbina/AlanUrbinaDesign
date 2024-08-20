@@ -1,0 +1,17 @@
+.portfolio-container{
+    padding: 2rem 0;
+
+    .carousel-inner{
+        padding: 2rem 1rem;
+
+        .carousel-item{
+            color: $color-text;
+
+            p{
+                font-size: larger;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

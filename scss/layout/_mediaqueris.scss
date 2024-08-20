@@ -52,13 +52,13 @@
         gap: 20px;}
     }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
     .header-container{display: none;}
     .header-items{display: none;}
     
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 769px){
     .menu-mobile{display: none;
     }
     .navmobile-content .menu-mobile {
@@ -80,15 +80,30 @@
     }
 
     .servicios-container{
-        width: 100%;
+        max-width: 100%;
         margin: 0;
-        padding: 2rem 1rem;
+        padding: 2rem 2rem;
     
         display: grid;
         grid-template-rows: 400px;
         grid-template-columns: repeat(3, 1fr);
         justify-content: center;
+        justify-content: space-around;
         gap: 3rem;
+
+        .servicio-item{
+            width: 100%;
+        }
+
+        h5{
+            height: 30px;
+        }
+
+        p{
+            padding: 3rem;
+        }
+
+
     
     }
     
