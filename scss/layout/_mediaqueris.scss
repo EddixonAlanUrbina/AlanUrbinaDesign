@@ -58,7 +58,7 @@
     
 }
 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 768px){
     .menu-mobile{display: none;
     }
     .navmobile-content .menu-mobile {
@@ -75,36 +75,6 @@
         grid-template-columns: repeat(4, 150px);
         gap: 20px;
         align-content: center;
-        justify-content: center;
+        justify-content: center;}
 
     }
-
-    .servicios-container{
-        max-width: 100%;
-        margin: 0;
-        padding: 2rem 2rem;
-    
-        display: grid;
-        grid-template-rows: 400px;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-        justify-content: space-around;
-        gap: 3rem;
-
-        .servicio-item{
-            width: 100%;
-        }
-
-        h5{
-            height: 30px;
-        }
-
-        p{
-            padding: 3rem;
-        }
-
-
-    
-    }
-    
-}

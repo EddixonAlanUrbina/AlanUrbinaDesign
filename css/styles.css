@@ -20,7 +20,6 @@ h1 {
   padding: 5px;
   margin: 5px;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
   font-size: 280%;
   font-weight: bold;
 }
@@ -38,7 +37,6 @@ h3 {
   width: 100%;
   margin: 2px 0 0 0;
   color: #dff3ff;
-  font-family: "Montserrat", sans-serif;
   border-bottom: #099FCA 2px solid;
   text-align: center;
   display: flex;
@@ -169,6 +167,9 @@ h5 {
   justify-content: center;
   justify-content: flex-start;
 }
+.footer-container .footer-item h5 {
+  padding-bottom: 15px;
+}
 .footer-container .footer-item .lista-explorar {
   padding: 0;
   margin: 0;
@@ -183,19 +184,20 @@ h5 {
 .footer-container .footer-item .lista-contactame .text-contact {
   margin: 4px 0 4px 0;
 }
+.footer-container .footer-item .lista-contactame .text-contact img {
+  padding: 0 10px 0 0;
+}
+.footer-container .footer-item .socialmedia-container {
+  width: 80%;
+  margin: 10px 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
 .footer-container .logo-footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.footer-container .socialmedia-container {
-  width: 50%;
-  margin: 10px 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  justify-content: flex-start;
-  gap: 5px;
 }
 
 .separador {
@@ -261,7 +263,6 @@ h5 {
 .sobremi-container .foto-sobremi {
   width: 400px;
   height: 100%;
-  margin: 20px;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -271,10 +272,20 @@ h5 {
   width: 400px;
   margin: 20px;
   font-weight: 600;
-  padding: 0;
   text-align: justify;
   display: flex;
   align-items: center;
+  flex-direction: column;
+}
+.sobremi-container .texto-sobremi .titulo-text {
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 25px;
+  background: #099FCA;
+  background-clip: text;
+  color: transparent;
+  display: flex;
+  justify-content: start;
 }
 
 .habilidades-container {
@@ -307,36 +318,36 @@ h5 {
 /* INCIO SERVICIOS*/
 .servicios-container {
   width: 100%;
-  margin: 0;
-  padding: 20px;
-  display: grid;
-  grid-template-rows: repeat(3, 400px);
-  grid-template-columns: 300px;
+  padding-bottom: 1rem;
+  display: flex;
   justify-content: center;
-  align-content: center;
-  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .servicios-container .servicio-item {
+  width: 350px;
+  height: 400px;
+  padding: 0;
+  color: #dff3ff;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.servicios-container .servicio-item .icon-servicio {
-  display: flex;
-  justify-content: center;
-}
-.servicios-container .servicio-item h5 {
-  height: 50px;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+.servicios-container .servicio-item h4 {
+  width: 100%;
+  height: 80px;
+  padding: 1rem 0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .servicios-container .servicio-item p {
-  padding: 0 1rem;
+  width: 100%;
+  height: 300px;
+  padding: 1rem 1rem;
   text-align: justify;
-  color: #dff3ff;
+  font-size: 15px;
 }
 
 /* FIN DE SERVICIOS*/
@@ -449,7 +460,7 @@ h5 {
     display: none;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .menu-mobile {
     display: none;
   }
@@ -471,26 +482,6 @@ h5 {
     gap: 20px;
     align-content: center;
     justify-content: center;
-  }
-  .servicios-container {
-    max-width: 100%;
-    margin: 0;
-    padding: 2rem 2rem;
-    display: grid;
-    grid-template-rows: 400px;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    justify-content: space-around;
-    gap: 3rem;
-  }
-  .servicios-container .servicio-item {
-    width: 100%;
-  }
-  .servicios-container h5 {
-    height: 30px;
-  }
-  .servicios-container p {
-    padding: 3rem;
   }
 }
 

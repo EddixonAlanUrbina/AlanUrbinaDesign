@@ -15,6 +15,10 @@
         justify-content: center;
         justify-content: flex-start;
 
+        h5{
+            padding-bottom: 15px;
+        }
+
         .lista-explorar{
             padding: 0;
             margin: 0;
@@ -30,8 +34,20 @@
 
             .text-contact{
                 margin: 4px 0 4px 0;
+                
+                img{
+                    padding: 0 10px 0 0;
+                }
             
             }
+        }
+        .socialmedia-container{
+            width: 80%;
+            margin: 10px 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        
         }
     }
 
@@ -39,16 +55,5 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .socialmedia-container{
-        width: 50%;
-        margin: 10px 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        justify-content: flex-start;
-        gap: 5px;
-    
     }
 }
