@@ -1,3 +1,24 @@
+.projects-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -242,9 +263,6 @@ h5 {
   width: 100%;
   height: 790px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 .hero-container .text-hero .boton-container {
   height: 50px;
@@ -297,6 +315,9 @@ h5 {
   width: 100%;
   border-bottom: #099FCA 4px solid;
 }
+.sobremi-container .texto-sobremi p span {
+  font-weight: 600;
+}
 
 .habilidades-container {
   width: 100%;
@@ -339,9 +360,6 @@ h5 {
   background-color: #dff3ff;
   color: #0a1627;
   border-radius: 1rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 .servicios-container .servicio-item img {
   margin-top: 1rem;
@@ -367,7 +385,6 @@ h5 {
 /* FIN DE SERVICIOS*/
 .projects-container {
   width: 100%;
-  display: flex;
   color: #dff3ff;
   display: flex;
   justify-content: center;
@@ -376,16 +393,12 @@ h5 {
 }
 .projects-container .projects-cards {
   width: 400px;
-  text-align: justify;
   padding: 0;
   margin: 1rem;
+  text-align: justify;
   border: #099FCA 2px solid;
   border-radius: 20px;
   background-color: #dff3ff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 .projects-container .projects-cards .boton-projects {
   width: 200px;
@@ -401,14 +414,15 @@ h5 {
 }
 .projects-container .projects-cards .boton-projects:hover {
   background-color: #099FCA;
+  top: 1px;
 }
 .projects-container .projects-cards div {
   width: 100%;
   color: #0a1627;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 .projects-container .projects-cards div h4 {
   width: 100%;
@@ -439,6 +453,7 @@ h5 {
 .projects-container .projects-cards img {
   margin: 0.5rem 0.5rem;
   border-radius: 18px;
+  transition: 1s;
 }
 
 @media screen and (max-width: 576px) {

@@ -1,0 +1,17 @@
+@mixin cards($direction, $align, $justify){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+.projects-cards{
+    @include cards(column, center, center)
+}
+.servicio-item{
+    @include cards(column, center, center)
+}
+
+.text-hero{
+    @include cards(column, center, center)
+}
