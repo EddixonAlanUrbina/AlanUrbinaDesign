@@ -13,6 +13,7 @@
     justify-content: space-around;
 
     .text-hero{
+        @include flex-cards(column, center, center);
         width: 100%;
         height: 790px;
         text-align: center;
@@ -87,34 +88,29 @@
         
     }
 }
-
-
 .habilidades-container{
-    width: 100%;
+    max-width: 100%;
+    height: 300px;
     padding: 1rem .5rem;
-    gap: 1rem;
+    gap: 2rem;
     display: grid;
-    grid-template-rows: repeat(2, 80px);
-    grid-template-columns: repeat(4, 80px);
-    align-items: center;
+    grid-template-rows: repeat(2, 120px);
+    grid-template-columns: repeat(4, 120px);
+    align-content: center;
     justify-content: center;
 
-    .skills-items{
-        color: #ffffff;
+    img{
+        width: 90px;
         padding: 0;
-        display: flex;
-        align-items: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        .icon-tools{
-            height: 70px;
-            width: 70px;
-            padding: 0;
+    }
+    .icon-tools{
+        transition: 1s;
+        &:hover{
+            transform: scale(1.5, 1.5);
         }
     }
 }
+
 
 /* FIN SOBRE MI*/
 
@@ -128,6 +124,7 @@
     flex-wrap: wrap;
 
     .servicio-item{
+        @include flex-cards(column, center, center);
         width: 240px;
         padding: 0 0 1rem 0;
         margin: .5rem .5rem;
@@ -182,6 +179,7 @@
 
 
     .projects-cards{
+        @include flex-cards(column, center, center);
         width: 400px;
         padding: 0;
         margin: 1rem;
@@ -189,8 +187,6 @@
         border: $color-primario 2px solid;
         border-radius: 20px;
         background-color: $color-text;
-    
-        
 
         .boton-projects{
             width: 200px;
@@ -205,28 +201,23 @@
             box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.447);
             &:hover{
                 background-color: $color-primario;
-                top: 1px;
             }
         }
         
         div{
+            @include flex-cards(column, center, center);
             width: 100%;
             color: $color-secundario;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
         
 
             h4{
+                @include flex-cards(column, center, center);
                 width: 100%;
                 padding: 0;
                 margin: 0;
                 font-weight: 600;
                 color: $color-secundario;
                 text-align: center;
-                display: flex;
-                align-items: center;
             }
 
             h5{
@@ -253,7 +244,7 @@
         img{
             margin: .5rem .5rem;
             border-radius: 18px;
-            transition: 1s;
+            transition: 0.5s;
     
             }
         }

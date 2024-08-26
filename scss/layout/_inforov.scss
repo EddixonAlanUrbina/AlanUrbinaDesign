@@ -1,0 +1,111 @@
+.header-pages{
+    width: 100%;
+    text-decoration: none;
+
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-weight: 600;
+
+    .header-items{
+        padding: 0;
+        margin: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .items-menu{
+            padding: 0 1rem;
+            transition: .3s;
+            &:hover{
+                border-bottom: #099FCA 2px solid;
+            }
+        }
+
+        }
+}
+
+
+
+
+
+
+.inforov-container{
+    width: 100%;
+    height: 900px;
+    background-color: $color-terciario;
+
+}
+
+.footer-pages{
+        margin: 20px 20px;
+        color: #ffffff;
+        display: grid;
+        grid-template-rows: 200px;
+        grid-template-columns: 1fr 0.6fr 1fr;
+        grid-gap: 5px;
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    
+        .footer-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-content: flex-start;
+            
+            h4{
+                width: 100%;
+                justify-content: start;
+                padding: 0;
+    
+            }
+    
+            h5{
+                padding-bottom: 15px;
+            }
+    
+            .lista-explorar{
+                padding: 0;
+                margin: 0;
+    
+                .text-explorar {
+                    margin: 4px 0 4px 0;
+                }
+            }
+    
+            .lista-contactame{
+                padding: 0;
+                margin: 0;
+    
+                .text-contact{
+                    margin: 4px 0 4px 0;
+                    
+                    img{
+                        padding: 0 10px 0 0;
+                    }
+                
+                }
+            }
+            .socialmedia-container{
+                width: 80%;
+                margin: 10px 0;
+                padding: 0;
+                display: flex;
+                gap: 20px;
+            
+            }
+        }
+    
+        .logo-footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
