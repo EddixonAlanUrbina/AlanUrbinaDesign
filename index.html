@@ -4,13 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Alan Urbina Design</title>
     <!-- LINK BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- LINK GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Primary Meta Tags -->
+    <title>Alan Urbina Design</title>
+    <meta name="title" content="Alan Urbina Design | ¡Potencia tu Marca!" />
+    <meta name="description" content="Lleva tu marca al próximo nivel con Diseño logo, publicidad en redes sociales y diseño web.
+    " />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://alanurbinadesign.vercel.app/" />
+    <meta property="og:title" content="Alan Urbina Design | ¡Potencia tu Marca!" />
+    <meta property="og:description" content="Lleva tu marca al próximo nivel con Diseño logo, publicidad en redes sociales y diseño web.
+    " />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://alanurbinadesign.vercel.app/" />
+    <meta property="twitter:title" content="Alan Urbina Design | ¡Potencia tu Marca!" />
+    <meta property="twitter:description" content="Lleva tu marca al próximo nivel con Diseño logo, publicidad en redes sociales y diseño web.
+    " />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <link
+    rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
 
     <link rel="shortcut icon" href="media/icon-alan-u.png" type="image/x-icon">
     
@@ -182,7 +208,7 @@
     <section class="projects-container">
         
         <div class="projects-cards">
-            <img src="media/inforov-logo.webp" alt="Logo InfoRov">
+            <img class="motion-image" src="media/inforov-logo.webp" alt="Logo InfoRov">
             <div>
             <h4>INFOROV</h4>
             <h5>Branding - Product Design</h5>
@@ -194,7 +220,7 @@
         </div>
 
         <div class="projects-cards">
-            <img src="media/montturb-logo.webp" alt="Logo MonttUrb">
+            <img class="motion-image" src="media/montturb-logo.webp" alt="Logo MonttUrb">
             <div>
             <h4>MONTTURB</h4>
             <h5>Branding</h5>
@@ -206,7 +232,7 @@
         </div>
 
         <div class="projects-cards">
-            <img src="media/waraira-logo.webp" alt="Logo Waraira Food">
+            <img class="motion-image" src="media/waraira-logo.webp" alt="Logo Waraira Food">
             <div>
             <h4>WARAIRA FOOD</h4>
             <h5>Branding</h5>
@@ -217,8 +243,8 @@
             <div class="boton-projects"><a href="https://www.behance.net/alanurbina" target="_blank">Ver en Behance <img class="icon-tobehance" src="media/icon-btn-behance.svg" alt="Icono Flecha"></a></div>
         </div>
 
-        <div class="projects-cards">
-            <img src="media/natalianavarro-logo.webp" alt="Logo Natalia Navarro">
+        <div  class="projects-cards">
+            <img class="motion-image" src="media/natalianavarro-logo.webp" alt="Logo Natalia Navarro">
             <div>
             <h4>NATALIA NAVARRO</h4>
             <h5>Brand Redesign</h5>
@@ -230,7 +256,7 @@
         </div>
 
         <div class="projects-cards">
-            <img src="media/natalianavarro-logo.webp" alt="Logo Natalia Navarro">
+            <img class="motion-image" src="media/web-montturb_1.webp" alt="Logo Natalia Navarro">
             <div>
             <h4>MONTTURB CLOTHING</h4>
             <h5>Web Design</h5>
@@ -242,15 +268,15 @@
         </div>
 
         <div class="projects-cards">
-            <img src="media/natalianavarro-logo.webp" alt="Logo Natalia Navarro">
+            <img class="motion-image" src="media/app-inforov_1.webp" alt="Logo Natalia Navarro">
             <div>
-            <h4>NATALIA NAVARRO</h4>
-            <h5>Rediseño de Logo</h5>
+            <h4>INFOROV - APP </h4>
+            <h5>UX/UI Design</h5>
             </div>
             <p>
-            Rediseño de logotipo para marca personal.
+            Diseño de experiencia e interfaz de usuario para aplicación movil de informes de inspecciones submarinas.
             </p>
-            <div class="boton-projects"><a href="https://www.behance.net/alanurbina" target="_blank">Ver en Behance <img class="icon-tobehance" src="media/icon-btn-behance.svg" alt="Icono Flecha"></a></div>
+            <div class="boton-projects"><a href="https://www.behance.net/gallery/200351361/Proyecto-InfoRov" target="_blank">Ver en Behance <img class="icon-tobehance" src="media/icon-btn-behance.svg" alt="Icono Flecha"></a></div>
         </div>
 
     
@@ -261,28 +287,57 @@
 
     <h3>MÁS PROYECTOS</h3>
 
-    <div id="carousel-logos" class="carousel slide carousel-fade">
-        <div class="carousel-inner">    
-        <div class="carousel-item active">
-            <img src="./media/socialmedia-1.webp" class="d-block w-100" alt="Redes sociales Valentino">
+    <div id="carouselExampleDark" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
-        <div class="carousel-item">
-            <img src="./media/socialmedia-2.webp" class="d-block w-100" alt="Redes Sociales Beer">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="media/socialmedia-1.webp" class="d-block w-100" alt="Social Media VBP">
+            <div class="carousel-cap d-none d-md-block">
+              <h5>Valentino Beauty Pure Chile</h5>
+              <p>Diseño de post para redes sociales</p>
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="media/socialmedia-4.webp" class="d-block w-100" alt="Social Media Gaby Ferrada Nails">
+            <div class="carousel-cap d-none d-md-block">
+              <h5>Gabriela Ferrada Nails Academy</h5>
+              <p>Diseño de post para redes sociales</p>
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="media/socialmedia-2.webp" class="d-block w-100" alt="Social Media Restaurant">
+            <div class="carousel-cap d-none d-md-block">
+              <h5>Reiwa Sushi - Waraira Food - Latitudes - Sabor Peruano</h5>
+              <p>Diseño de post para redes sociales</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="media/socialmedia-3.webp" class="d-block w-100" alt="Social Media Cervezas del Sur">
+            <div class="carousel-cap d-none d-md-block">
+              <h5>Cervezas del Sur</h5>
+              <p>Diseño de post para redes sociales</p>
+            </div>
+          </div>
         </div>
-        <div class="carousel-item">
-            <img src="./media/socialmedia-3.webp" class="d-block w-100" alt="Redes Sociales Food">
-        </div>
-    </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-logos" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel-logos" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
         </button>
-    </div>
-  </div>
+      </div>
 
 
 </section>

@@ -197,6 +197,16 @@
         text-align: justify;
         border-radius: 20px;
         background-color: $color-text;
+        
+        .motion-image{
+            width: 100%;
+            border-radius: 1rem;
+            object-fit: cover;
+            transition: .3s;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
 
         .boton-projects{
             width: 200px;
@@ -261,12 +271,5 @@
             color: $color-secundario;
         }
 
-        img{
-            width: 350px;
-            border-radius: 18px;
-            transition: 0.5s;
-    
-            }
-        }
-        
+    }
 }

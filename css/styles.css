@@ -210,21 +210,42 @@ h5 {
 }
 
 .portfolio-container {
-  padding: 2rem 0;
+  padding: 0;
 }
-.portfolio-container h3 {
-  border-bottom: #099FCA 2px solid;
-}
-.portfolio-container .carousel-inner {
-  padding: 2rem 1rem;
-}
-.portfolio-container .carousel-inner .carousel-item {
-  color: #dff3ff;
-}
-.portfolio-container .carousel-inner .carousel-item p {
-  font-size: larger;
+.portfolio-container .carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  left: 0;
+  z-index: 2;
   display: flex;
   justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 3rem;
+  margin-left: 15%;
+}
+.portfolio-container .carousel-cap {
+  padding-bottom: 2rem;
+  color: #fff;
+  text-align: center;
+}
+.portfolio-container .carousel-control-next, .portfolio-container .carousel-control-prev {
+  position: absolute;
+  top: -100px;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: 0 0;
+  border: 0;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
 }
 
 /* INICIO DEL HERO */
@@ -398,6 +419,15 @@ h5 {
   border-radius: 20px;
   background-color: #dff3ff;
 }
+.projects-container .projects-cards .motion-image {
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.projects-container .projects-cards .motion-image:hover {
+  transform: scale(1.2);
+}
 .projects-container .projects-cards .boton-projects {
   width: 200px;
   height: 50px;
@@ -455,11 +485,6 @@ h5 {
   padding: 0.5rem 2rem;
   margin: 0;
   color: #0a1627;
-}
-.projects-container .projects-cards img {
-  width: 350px;
-  border-radius: 18px;
-  transition: 0.5s;
 }
 
 @media screen and (max-width: 576px) {
