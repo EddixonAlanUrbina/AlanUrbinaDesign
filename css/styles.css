@@ -82,7 +82,6 @@ h5 {
 }
 .header-container .header-items .items-menu {
   padding: 0 1rem;
-  transition: 0.3s;
 }
 .header-container .header-items .items-menu:hover {
   border-bottom: #099FCA 2px solid;
@@ -213,6 +212,9 @@ h5 {
 .portfolio-container {
   padding: 2rem 0;
 }
+.portfolio-container h3 {
+  border-bottom: #099FCA 2px solid;
+}
 .portfolio-container .carousel-inner {
   padding: 2rem 1rem;
 }
@@ -232,7 +234,7 @@ h5 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(/media/fondo-web-alan-3.webp);
+  background-image: url(../media/fondo-web-alan-3.webp);
   display: flex;
   justify-content: center;
   justify-content: space-around;
@@ -271,7 +273,6 @@ h5 {
 .sobremi-container .foto-sobremi {
   width: 400px;
   height: 100%;
-  padding: 1rem;
   display: flex;
   justify-content: center;
 }
@@ -313,6 +314,15 @@ h5 {
   grid-template-rows: repeat(2, 120px);
   grid-template-columns: repeat(4, 120px);
   align-content: center;
+  justify-content: center;
+}
+.habilidades-container .skills-items {
+  color: #ffffff;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 .habilidades-container img {
@@ -370,11 +380,10 @@ h5 {
 
 /* FIN DE SERVICIOS*/
 .projects-container {
-  width: 100%;
   color: #dff3ff;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   flex-wrap: wrap;
 }
 .projects-container .projects-cards {
@@ -521,7 +530,7 @@ h5 {
     gap: 1rem;
     display: grid;
     grid-template-rows: repeat(2, 80px);
-    grid-template-columns: repeat(4, 80px);
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     justify-content: center;
   }
@@ -535,8 +544,8 @@ h5 {
     justify-content: center;
   }
   .habilidades-container .skills-items .icon-tools {
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     padding: 0;
     transition: 1s;
   }
