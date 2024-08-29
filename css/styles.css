@@ -213,16 +213,11 @@ h5 {
   padding: 0;
 }
 .portfolio-container .carousel-indicators {
-  position: absolute;
-  right: 0;
-  bottom: -20px;
-  left: 0;
-  z-index: 2;
   display: flex;
   justify-content: center;
   padding: 0;
   margin-right: 15%;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   margin-left: 15%;
 }
 .portfolio-container .carousel-cap {
