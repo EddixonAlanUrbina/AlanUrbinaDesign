@@ -6,7 +6,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../media/fondo-web-alan-3.webp);
-    
+
 
     display: flex;
     justify-content: center;
@@ -32,9 +32,9 @@
                 background-color: #099FCA;
             }
         }
-    
+
     }
-    
+
 }
 /* FIN DEL HERO*/
 
@@ -45,11 +45,10 @@
     padding-top: 3rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 
     .foto-sobremi{
-
-        width: 400px;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -60,7 +59,7 @@
         width: 500px;
         margin: 20px;
         font-weight: 400;
-    
+
         text-align: justify;
         display: flex;
         align-items: center;
@@ -76,7 +75,7 @@
             color: transparent;
             display: flex;
             justify-content: start;
-            
+
         }
 
         h2{
@@ -87,8 +86,8 @@
         p span{
             font-weight: 600;
         }
-        
-        
+
+
     }
 }
 .habilidades-container{
@@ -143,13 +142,13 @@
         background-color: $color-text;
         color: $color-secundario;
         border-radius: 1rem;
-        
-        
+
+
 
         img{
             margin-top: 1rem;
         }
-        
+
 
         h4{
             width: 100%;
@@ -160,9 +159,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
-        
+
         }
-    
+
         p{
             width: 100%;
             height: 160px;
@@ -197,7 +196,7 @@
         text-align: justify;
         border-radius: 20px;
         background-color: $color-text;
-        
+
         .motion-image{
             width: 100%;
             border-radius: 1rem;
@@ -232,12 +231,12 @@
             }
 
         }
-        
+
         div{
             @include flex-cards(column, center, center);
             width: 100%;
             color: $color-secundario;
-        
+
 
             h4{
                 @include flex-cards(column, center, center);
@@ -259,17 +258,70 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                
+
             }
 
         }
 
-        p{  
+        p{
             height: 80px;
             padding: .5rem 2rem;
             margin: 0;
             color: $color-secundario;
         }
 
+    }
+}
+
+/* CONTACTOS*/
+.form-container{
+    @include flex-cards(column, center, center);
+
+
+    form{
+        color: $color-text;
+        font-family: $font-site;
+        font-weight: 600;
+        padding-bottom: 2rem;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    
+    
+        label{
+            padding: .5rem;
+        }
+        input{
+            width: 100%;
+            border: $color-primario 1px solid;
+            border-radius: 1rem;
+            background: none;
+            padding: .5rem;
+            color: $color-text;
+    
+        }
+
+        textarea{
+            width: 100%;
+            border: $color-primario 1px solid;
+            border-radius: 1rem;
+            background: none;
+            padding: .5rem;
+            color: $color-text;
+        
+        }
+        
+        .boton-enviar{
+            background-color: $color-primario;
+            font-weight: 600;
+            margin-top: 1rem;
+
+            &:hover{
+                background-image: linear-gradient(45deg, $color-terciario,$color-primario);
+                box-shadow: 0 0 10px $color-primario;
+            }
+        }
+    
     }
 }
