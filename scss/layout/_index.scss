@@ -19,7 +19,7 @@
         text-align: center;
 
         h4{
-            padding: .5rem 0;
+            padding: .5rem 1rem;
         }
 
         .boton-container{
@@ -29,7 +29,14 @@
 
             .btn-primary{
                 font-weight: 600;
-                background-color: #099FCA;
+                background-color: $color-primario;
+                border-radius: 1rem;
+                transition: .5seg;
+                
+                &:hover{
+                    background-image: linear-gradient(45deg, $color-terciario,$color-primario);
+                    box-shadow: 0 0 10px $color-primario;
+                }
             }
         }
 
@@ -212,7 +219,7 @@
             height: 50px;
             color: $color-text;
             font-weight: 600;
-            background-color: $color-terciario;
+            background-color: $color-primario;
             border-radius: 1rem;
             position: relative;
             top: 1.5rem;
@@ -222,7 +229,8 @@
             display: flex;
             align-items: center;
             &:hover{
-                background-color: $color-primario;
+                background-image: linear-gradient(45deg, $color-terciario,$color-primario);
+                box-shadow: 0 0 10px $color-primario;
             }
 
             .icon-tobehance{
@@ -274,54 +282,61 @@
 }
 
 /* CONTACTOS*/
-.form-container{
-    @include flex-cards(column, center, center);
+.contacto-container{
+    display: flex;
+    justify-content: center;
 
+    .form-container{
+        width: 90%;
+        color: $color-text;
+        @include flex-cards(column, center, center);
 
-    form{
+        h3{
+            margin: 0 0 1rem 0;
+            padding: .5rem 0;
+        }
+    
+
+        form{
+        width: 60%;
         color: $color-text;
         font-family: $font-site;
         font-weight: 600;
         padding-bottom: 2rem;
-        width: 90%;
         display: flex;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
     
     
-        label{
-            padding: .5rem;
-        }
-        input{
+        input, textarea{
             width: 100%;
+            color: $color-text;
             border: $color-primario 1px solid;
-            border-radius: 1rem;
+            border-radius: .5rem;
             background: none;
             padding: .5rem;
+            margin: .5rem;
             color: $color-text;
-    
+
         }
 
-        textarea{
+        label{
             width: 100%;
-            border: $color-primario 1px solid;
-            border-radius: 1rem;
-            background: none;
-            padding: .5rem;
-            color: $color-text;
-        
+            text-align: start;
+            font-size: larger;
         }
         
         .boton-enviar{
             background-color: $color-primario;
             font-weight: 600;
-            margin-top: 1rem;
+            transition: .5s;
 
             &:hover{
                 background-image: linear-gradient(45deg, $color-terciario,$color-primario);
                 box-shadow: 0 0 10px $color-primario;
             }
         }
-    
+    }
     }
 }

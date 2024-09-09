@@ -36,8 +36,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    
-
+    <!-- ANIMATE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 
     <link rel="shortcut icon" href="media/icon-alan-u.png" type="image/x-icon">
@@ -91,12 +91,12 @@
         <section class="hero-container">
             
             <div class="text-hero">
-                <h1>¡POTENCIA TU MARCA!</h1>     
-                <h4>LLEVA TU PROYECTO AL PROXIMO NIVEL</h4>           
-                <h4>LOGOTIPOS | SOCIAL MEDIA | DISEÑO WEB | VIDEOS</h4>
+                <h1 class="animate__animated animate__pulse">¡POTENCIA TU MARCA!</h1>     
+                <h4 class="animate__animated animate__fadeInDown animate__delay-1s">LLEVA TU PROYECTO AL PROXIMO NIVEL</h4>           
+                <h4 class="animate__animated animate__fadeInDown animate__delay-2s">LOGOTIPOS | SOCIAL MEDIA | DISEÑO WEB | VIDEOS</h4>
             
                 <div class="boton-container">
-                <a class="btn btn-primary btn-lg" style="--bs-btn-padding-y: .5rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 1.2rem;" href="https://wa.link/thmy03" target="_blank" role="button">CONTÁCTAME</a>
+                <a class="btn btn-primary btn-lg animate__animated animate__heartBeat animate__delay-3s" style="--bs-btn-padding-y: .5rem; --bs-btn-padding-x: 2rem; --bs-btn-font-size: 1.2rem;" href="https://wa.link/thmy03" target="_blank" role="button">CONTÁCTAME</a>
                 </div>
             </div>
 
@@ -106,17 +106,17 @@
         <!-- SECCION SOBRE MI  -->
 
         <section>
-                    <div class="sobremi-container">
+                    <div class="sobremi-container" id="sobremi">
                         <div class="foto-sobremi">
                             <img src="./media/mi_foto.png" alt="Foto Alan Urbina">
                         </div>
 
                         <div class="texto-sobremi">
-                            <h2 id="sobremi">SOBRE MI</h2>
+                            <h2>SOBRE MI</h2>
                             <h3 class="titulo-text">¡Hola! Soy Alan Urbina</h3>
                             <p><span>Diseñador Gráfico Profesional</span> con 7 años de experiencia en el sector de la publicidad, especializado en diseño para redes sociales,  con habilidades en <span>Diseño UX/UI y Diseño Web.</span></p>
 
-                            <p>Durante estos años, he transformado <span>ideas creativas en soluciones visuales efectivas</span>, Mi experiencia en agencias de publicidad y mi reciente enfoque en diseño UX/UI y Diseño Web me han permitido desarrollar un enfoque integral en mis proyectos.</p>
+                            <p>Durante estos años, he transformado <span>ideas creativas en soluciones visuales efectivas</span>. Mi experiencia en agencias de publicidad y mi reciente enfoque en diseño UX/UI y Diseño Web me han permitido desarrollar un enfoque integral en mis proyectos.</p>
                                 
                             <p>Mi objetivo es seguir creciendo profesionalmente,  además de contribuir a proyectos innovadores que desafíen mis capacidades y me permitan colaborar con equipos apasionados para <span>crear soluciones visuales impactantes.</span>
                             </p>
@@ -166,9 +166,9 @@
     
         <!-- SECCION DE SERVICIOS  -->
          
-        <h2 id="servicio">SERVICIOS</h2>
+        
         <section>
-            
+            <h2 id="servicio">SERVICIOS</h2>
                 <div class="servicios-container">
                     <div class="servicio-item">
                         <div class="icon-servicio"><img src="media/icon-diseno-grafico.svg" alt="Icono Diseño Gráfico"></div>
@@ -225,7 +225,7 @@
             <img class="motion-image" src="media/montturb-logo.webp" alt="Logo MonttUrb">
             <div>
             <h4>MONTTURB</h4>
-            <h5>Branding</h5>
+            <h5>Branding Design</h5>
             </div>
             <p>
             Diseño de logotipo para marca de ropa.
@@ -237,7 +237,7 @@
             <img class="motion-image" src="media/waraira-logo.webp" alt="Logo Waraira Food">
             <div>
             <h4>WARAIRA FOOD</h4>
-            <h5>Branding</h5>
+            <h5>Branding Design</h5>
             </div>
             <p>
             Diseño de branding para restaurante de comida rapida.
@@ -285,7 +285,7 @@
 
     </section>
 
-<section class="portfolio-container">
+    <section class="portfolio-container">
 
     <h3>MÁS PROYECTOS</h3>
 
@@ -342,15 +342,11 @@
       </div>
 
 
-</section>
-
-
+    </section>
     
         <!-- FIN SECCION DE PORTFOLIO -->
 
-    </main>
-
-    <div class="separador"></div>
+        <div class="separador"></div>
 
 
     <!-- SECCION CONTACTO -->
@@ -358,62 +354,73 @@
     <h2 id="contacto">CONTACTO</h2>
 
         
-    <section class="form-container">
+    <section class="contacto-container">
 
-        <form action="https://formsubmit.co/aurbinadesign@gmail.com" method="POST">
+    <div class="form-container">
+    
+            <h3>¡Hablemos sobre tu próximo proyecto!</h3>
 
-            <div>
+            <form action="https://formsubmit.co/aurbinadesign@gmail.com" method="POST">
+
                 <label for="name">Nombre</label>
                 <input type="text" name="name" id="name" placeholder="Nombre">
 
-                <label for="phone"> Teléfono</label>
+                <label for="phone">Teléfono</label>
                 <input type="telf" name="phone" id="phone" placeholder="Teléfono">
+                
+                <label for="email">Correo electronico</label>
+                <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com">
 
-                <label for="email"> Email</label>
-                <input type="email" name="email" id="email" placeholder="Email">
+                <label for="">Asunto</label>
+                <input type="text" name="asunto" id="asunto" placeholder="Asunto">
 
-                <label for="message">¡Hablemos sobre tu Proyecto!</label>
-                <textarea name="message" id="message" cols="30" rows="7" placeholder="Mensaje"></textarea>
+                <label for="mensaje">Mensaje</label>
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
 
                 <input class="boton-enviar" type="submit" value="ENVIAR">
 
-            </div>
+            </form>
+        </div>
 
-
-        </form>
     </section>
 
 
     <!-- FIN SECCION CONTACTO -->
 
+    </main>
+
     <div class="separador"></div>
 
     <!-- SECCION FOOTER -->
 
-    <footer class="footer-container">
-        <div class="footer-item logo-footer"><img src="media/logo-alan-footer.svg" alt="Logo Alan Urbina">
-        </div>   
+    <footer>
+        <div class="footer-container">
 
-        <div class="footer-item"><h4>EXPLORAR</h4>
+            <div class="footer-item logo-footer"><img src="media/logo-alan-footer.svg" alt="Logo Alan Urbina">
+            </div>   
+
+            <div class="footer-item"><h4>EXPLORAR</h4>
             <ul class="lista-explorar">
                 <li class="text-explorar"><a href="#">INICIO</a></li>
                 <li class="text-explorar"><a href="#sobremi">SOBRE MI</a></li>
                 <li class="text-explorar"><a href="#servicio">SERVICIOS</a></li>
                 <li class="text-explorar"><a href="#portfolio">PORTFOLIO</a></li>
             </ul>
-        </div>
+            </div>
 
-        <div class="footer-item"><h4>CONTÁCTAME</h4>   
+            <div class="footer-item"><h4>CONTACTO</h4>   
                 <ul class="lista-contactame">
-                    <li class="text-contact"><img src="media/icon-phone.svg" alt="Icon-Phone">   +56 9 3354 3550</li>
-                    <li class="text-contact"><img src="media/icon-mail.svg" alt="Icon-Mail">    info@alanurbinadesign.com</li>
+                    <li class="text-contact"><img src="media/icon-phone.svg" alt="Icon-Phone">+56 9 3354 3550</li>
+                    <li class="text-contact"><img src="media/icon-mail.svg" alt="Icon-Mail">aurbinadesign@gmail.com</li>
                 </ul>
 
                 <ul class="socialmedia-container">
                     <li><a href="https://www.linkedin.com/in/eddixon-alan-urbina-montilla/" target="_blank"><img src="media/linkedin.svg" alt="Logo Linkedin"></a></li>
                     <li><a href="https://www.instagram.com/alanurbinadesign/" target="_blank"><img src="media/instagram.svg" alt="Logo Instagram"></a></li>
                 </ul>
-        </div>    
+            </div> 
+
+        </div>          
     </footer>
     
 

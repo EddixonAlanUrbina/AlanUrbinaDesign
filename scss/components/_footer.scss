@@ -1,9 +1,9 @@
 .footer-container{
-    margin: 20px 20px;
+    margin: 1rem 1rem 0 1rem;
     color: #ffffff;
     display: grid;
     grid-template-rows: 200px;
-    grid-template-columns: 1fr 0.6fr 1fr;
+    grid-template-columns: 1fr 0.7fr 1fr;
     grid-gap: 5px;
     justify-content: center;
     justify-content: space-between;
@@ -13,6 +13,7 @@
         flex-direction: column;
         justify-content: center;
         justify-content: flex-start;
+
         
         h4{
             width: 100%;
@@ -30,7 +31,7 @@
             margin: 0;
 
             .text-explorar {
-                margin: 4px 0 4px 0;
+                margin: .5rem 0 .5rem 0;
             }
         }
 
@@ -55,11 +56,17 @@
             gap: 20px;
         
         }
+
+
     }
+
 
     .logo-footer{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    p{color: $color-text;
+
     }
 }
